@@ -44,6 +44,7 @@
 		92A025602AA142D0003612EC /* ColorLensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A025642AA142D0003612EC /* ColorLensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLensUITests.swift; sourceTree = "<group>"; };
 		92A025662AA142D0003612EC /* ColorLensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLensUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92A025732AA23E82003612EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		92A025482AA142CF003612EC /* ColorLens */ = {
 			isa = PBXGroup;
 			children = (
+				92A025732AA23E82003612EC /* Info.plist */,
 				92A025492AA142CF003612EC /* ColorLensApp.swift */,
 				92A0254B2AA142CF003612EC /* ContentView.swift */,
 				92A0254D2AA142CF003612EC /* Assets.xcassets */,
@@ -345,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,7 +422,9 @@
 				DEVELOPMENT_TEAM = 22T46KCCHX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ColorLens needs access to your camera to capture photos and videos with the applied LUT filters.";
+				INFOPLIST_FILE = ColorLens/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ColorLens needs access to your microphone to record audio while capturing videos.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ColorLens needs access to your photo library to save captured photos and videos and to load recent photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -452,7 +456,9 @@
 				DEVELOPMENT_TEAM = 22T46KCCHX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ColorLens needs access to your camera to capture photos and videos with the applied LUT filters.";
+				INFOPLIST_FILE = ColorLens/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ColorLens needs access to your microphone to record audio while capturing videos.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ColorLens needs access to your photo library to save captured photos and videos and to load recent photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
